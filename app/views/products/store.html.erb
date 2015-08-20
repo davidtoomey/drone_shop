@@ -1,0 +1,22 @@
+
+<html>
+
+<head>
+	<% stylesheet_link_tag 'store.css' %>
+</head>
+
+<body>
+	<h1>Title</h1>
+	   <%= @result.at_xpath("//Title").content %>
+	   <br>
+       <%= @result.at_xpath("//Description").content %>
+       <br>
+       <%= @result.at_xpath("//URL").content  %>
+
+
+
+
+	 
+
+</body>
+
