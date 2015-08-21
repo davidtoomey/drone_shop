@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 gem 'amazon-ecs'
 gem 'nokogiri'
 gem 'aws-sdk', '~> 2.1.13'
+gem 'ruby-hmac'
 
 
 

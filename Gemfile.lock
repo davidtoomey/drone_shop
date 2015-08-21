@@ -161,6 +161,7 @@ DEPENDENCIES
   jquery-rails
   nokogiri
   rails (= 4.2.3)
+  ruby-hmac
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
