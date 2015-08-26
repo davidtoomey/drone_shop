@@ -10,9 +10,8 @@ Rails.application.config.assets.precompile += %w( demo.css )
 Rails.application.config.assets.precompile += %w( classie.js )
 Rails.application.config.assets.precompile += %w( main.js )
 Rails.application.config.assets.precompile += %w( modernizr.custom.js )
-
-
-
+Rails.application.config.assets.precompile += %w( scrolla.css )
+Rails.application.config.assets.precompile += %w( scrolla.js )
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )

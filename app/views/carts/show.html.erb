@@ -1,0 +1,4 @@
+<div class="shopping-cart">
+	<%= link_to 'EMPTY CART', @cart, method: :delete, class: 'small-caution-btn', data: { confirm: 'Are you sure?' } %>
+  <%= render "shopping_cart" %>
+</div>

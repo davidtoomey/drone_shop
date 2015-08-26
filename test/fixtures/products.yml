@@ -2,14 +2,10 @@
 
 one:
   name: MyString
-  price: 1.5
-  description: MyString
-  url: MyString
-  picture: MyString
+  price: 9.99
+  active: false
 
 two:
   name: MyString
-  price: 1.5
-  description: MyString
-  url: MyString
-  picture: MyString
+  price: 9.99
+  active: false

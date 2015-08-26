@@ -23,6 +23,24 @@ a{
 }
 
 
+
+.daves{
+	font-family: 'Cinzel', serif;
+	font-size:50px;
+	text-align: center;
+	font-style: italic;
+}
+
+.droneshop{
+	font-family: 'Cinzel', serif;
+	font-size:110px;
+	text-align: center;
+}
+hr{
+
+}
+
+
 .columnleft h1{
 	text-align: center;
 }
@@ -39,6 +57,10 @@ a{
 	text-decoration: none;
 	overflow-x:none;
 } 
+.dronepic{
+	width:100px;
+	height:100px;
+}
 
 .columnright h1{
 	text-align:center;

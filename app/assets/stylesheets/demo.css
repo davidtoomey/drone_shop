@@ -28,6 +28,22 @@ img .product--image{
 	height:150px;
 }
 
+.show_cart{
+	float:right;
+	overflow:hidden;
+
+}
+
+
+.navigation{
+	display:inline-block;
+	vertical-align: top;
+}
+
+.navigation h1{
+	display:inline-block;
+}
+
 /* Helper classes */
 .cf:before,
 .cf:after {

@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DroneStore</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>Dave's Drone Shop</title>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <% if request.ssl? %>
+    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+    <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
+  <% else %> 
+    <%= stylesheet_link_tag 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+    <%= javascript_include_tag 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js' %>
+  <% end %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+ <img src="assets/droneicon.png" width="50px" height:"50px" style="float:left;margin-top:1.5%;" />
+        <nav class="navigation">
 
-<%= yield %>
+          
+          <div class="navlink">
+              <li><h1>|<a href="/">Home</a>|</h1></li>
+          </div>
+          
+          <div class="navlink">
+              <li><h1 style="display:inline-block;">|<%= link_to "Store", products_path %>|</h1></li>
+          </div>
+
+          <div class="navlink">
+              <li><h1 style="display:inline-block;">|<%= link_to "Gallery", gallery_path%>|</li>
+          </div>
+
+        </nav>
+
+      <div class="navlink">
+        <h1 class="cart-text">|<%= render 'layouts/cart_text' %>|</h1>
+      </div>
+
+        <img src="assets/droneicon.png" / width="50px" height:"50px" style="float:right;margin-top:1.5%;">
+
+    </div>
+
+    <%= yield %>
+    <br>
+
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Store</title>
+
+</head>
+<body>
+
+<div class="forsale">
+<strong>Products</strong>
+</div>
+<section class="grid">
+<% @products.each do |product| %>
+
+<%= render "product_row", product: product, order_item: @order_item %>
+
+<% end %>
+</section>
+
+
+    
+</body>
+</html>
