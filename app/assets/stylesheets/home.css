@@ -13,6 +13,10 @@ a{
 	text-align:center;
 }
 
+.droneshop{
+	text-shadow: 0 0 5px #fff;
+}
+
 .columnleft{
 	display:inline-block;
 	width:50%;
