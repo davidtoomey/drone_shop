@@ -16,3 +16,15 @@
     <%= render 'carts/cart_row', product: order_item.product, order_item: order_item, show_total: true %>
   <% end %>
 <% end %>
+
+  <div class="checkout_btn">
+  <div class="checkout_btn-back">
+    <p>Are you sure you want to do that?</p>
+    <button class="yes">Yes</button>
+    <button class="no">No</button>
+  </div>
+  <div class="checkout_btn-front">CHECKOUT</div>
+</div>
+
+<%= javascript_include_tag 'main.js' %>
+
